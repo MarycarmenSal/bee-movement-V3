@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-//Marycarmen
+//Marycarmen S
 
 /**
  * Write a description of class MyWorld here.
