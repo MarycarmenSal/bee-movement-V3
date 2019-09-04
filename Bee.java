@@ -37,31 +37,28 @@ public class Bee extends Actor
         boolean contactCatus = isTouching(Catus.class);
         //System.out.println(contactFlower);
         if(contactFlower) {
-            removeTouching(Flower.class);
+            
             Flower plant = (Flower) getOneIntersectingObject(Flower.class);
             int plantScore = plant.getScore();
             score = plantScore + score;
+            removeTouching(Flower.class);
             
         }
-        if(contactCatus) {
-            score = dudeScore + score;  score = dudeScore + score;  score = dudeScore + score;  score = dudeScore + score;  score--;   /**
-             * An example of a method - replace this comment with your own
-             *
-             * @param  y  a sample parameter for a method
-             * @return    the sum of x and y
-             */
-            public int sampleMethod(int y)
-            {
-            // put your code here
-            return y;
+         if(contactCatus){
+            Catus dude = (Catus) getOneIntersectingObject(Catus.class);
+            int dudeScore = dude.getScore();
+            score = dudeScore + score;
+            removeTouching(Catus.class);
+            
         }
-
+        //Check if it wins
+        if(score >= 12)  {
+             BeeWin winScreen = new BeeWin();
+             Greenfoot.setWorld(winScreen);
+        }
+       
     }
    
         }
  
-    }
     
-    
-    
-
