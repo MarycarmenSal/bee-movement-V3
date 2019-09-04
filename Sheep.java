@@ -46,5 +46,10 @@ public class Sheep extends Actor
             removeTouching (Flower.class);
    
         }    
+        if(score >= 10)  {
+             BeeWin winScreen = new BeeWin();
+             Greenfoot.setWorld(winScreen);
+        
     }
+}
 }

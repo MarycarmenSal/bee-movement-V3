@@ -52,7 +52,7 @@ public class Bee extends Actor
             
         }
         //Check if it wins
-        if(score >= 12)  {
+        if(score >= 10)  {
              BeeWin winScreen = new BeeWin();
              Greenfoot.setWorld(winScreen);
         }
