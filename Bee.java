@@ -47,7 +47,7 @@ public class Bee extends Actor
          if(contactCatus){
             Catus dude = (Catus) getOneIntersectingObject(Catus.class);
             int dudeScore = dude.getScore();
-            score = dudeScore - score;
+            score = score - dudeScore;
             removeTouching(Catus.class);
             
         }

@@ -42,7 +42,7 @@ public class Sheep extends Actor
         if(contactFlower){
             Flower plant = (Flower) getOneIntersectingObject(Flower.class);
             int plantScore = plant.getScore();
-            score = plantScore - score;
+            score = score - plantScore;
             removeTouching (Flower.class);
    
         }    
