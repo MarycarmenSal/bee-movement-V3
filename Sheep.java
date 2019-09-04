@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Sheep extends Actor
 {
 
+            
     /**
      * Act - do whatever the Sheep wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -37,5 +38,13 @@ public class Sheep extends Actor
             score = dudeScore + score;
             removeTouching(Catus.class);
         }
-    }    
+        boolean contactFlower = isTouching(Flower.class);
+        if(contactFlower){
+            Flower plant = (Flower) getOneIntersectingObject(Flower.class);
+            int plantScore = plant.getScore();
+            score = plantScore - score;
+            removeTouching (Flower.class);
+   
+        }    
+    }
 }
