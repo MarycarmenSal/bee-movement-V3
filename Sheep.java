@@ -47,8 +47,8 @@ public class Sheep extends Actor
    
         }    
         if(score >= 10)  {
-             BeeWin winScreen = new BeeWin();
-             Greenfoot.setWorld(winScreen);
+             SheepWin winerScreen = new SheepWin();
+             Greenfoot.setWorld(winerScreen);
         
     }
 }

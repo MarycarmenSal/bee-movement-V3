@@ -1,19 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class BeetleWin here.
+ * Write a description of class SheepWin here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class BeetleWin extends World
+public class SheepWin extends World
 {
 
     /**
-     * Constructor for objects of class BeetleWin.
+     * Constructor for objects of class SheepWin.
      * 
      */
-    public BeetleWin()
+    public SheepWin()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
