@@ -19,7 +19,7 @@ public class Sheep extends Actor
     
     public void act() 
     { 
-        turn(Greenfoot.getRandomNumber(20)-10);
+        turn(Greenfoot.getRandomNumber(30)-15);
         move(5);
         int x = getX();
         int y = getY();
@@ -46,12 +46,12 @@ public class Sheep extends Actor
             removeTouching (Flower.class);
    
         }    
-        if(score >= 25)  {
+        if(score >= 15)  {
              SheepWin winerScreen = new SheepWin();
              Greenfoot.setWorld(winerScreen);
         
     }
-    if(score <= -25){
+    if(score <= -15){
             BeeWin winScreen = new BeeWin();
             Greenfoot.setWorld(winScreen);
     }
